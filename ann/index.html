@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
 
@@ -97,6 +98,17 @@ a{
 }
 /* ======================================== */
 
+/* ========== POS tag (S/N/V etc.) shown visually, NOT read by speech ========== */
+.btn-default[data-pos]::after,
+.btn-primary[data-pos]::after {
+  content: attr(data-pos);
+  font-size: 11px;
+  vertical-align: super;
+  color: #999;
+  margin-left: 3px;
+}
+/* =============================================================================== */
+
 </style>
 </head>
 <body>
@@ -107,6 +119,7 @@ a{
 	<br>
 	<h3>Keep calm and carry on.</h3>
 	<button class="btn verb"><a href="http://18.183.126.81/tense.pdf" download>下載三態表</a></button><BR>
+	<button class="btn verb"><a href="http://18.183.126.81/vocaend.html">字尾list</a></button><BR>
     <br>
   </div>
 </div>
@@ -118,58 +131,63 @@ a{
     <div class="btn btn-success">Reset</div><a class="btn btn-info" href="#env">EN Version</a>
   </h3>
   <p>
-<div class="btn btn-default btn-lg"> 暑假作業(86-99) </div>
-<div class="btn btn-default btn-lg"> 藍鈕是單字本U18</div>
-<div class="btn btn-primary btn-lg"> cinema 電影院 </div>
-<div class="btn btn-primary btn-lg"> essential 必要的 </div>
-<div class="btn btn-primary btn-lg"> entertainment 娛樂 </div>
-<div class="btn btn-primary btn-lg"> direct 直接的 </div>
-<div class="btn btn-primary btn-lg"> silence 寂靜 </div>
-<div class="btn btn-primary btn-lg"> fair 公平的/市集 </div>
-<div class="btn btn-primary btn-lg"> stage 舞台/階段 </div>
-<div class="btn btn-primary btn-lg"> inventor 發明家 </div>
-<div class="btn btn-primary btn-lg"> proper 適當的 </div>
-<div class="btn btn-primary btn-lg"> decade 十年 </div>
-<div class="btn btn-primary btn-lg"> nearly 幾乎 </div>
-<div class="btn btn-primary btn-lg"> dialogue 對話 </div>
-<div class="btn btn-primary btn-lg"> inspire 激勵 </div>
-<div class="btn btn-primary btn-lg"> creativity 創造力 </div>
-<div class="btn btn-primary btn-lg"> career 職業生涯 </div>
-<div class="btn btn-primary btn-lg"> fame 名聲 </div>
-<div class="btn btn-primary btn-lg"> hardship 艱難 </div>
-<div class="btn btn-primary btn-lg"> dramatically 顯著地 </div>
-<div class="btn btn-primary btn-lg"> switch 切換/開關 </div>
-<div class="btn btn-primary btn-lg"> emergence 出現 </div>
-<div class="btn btn-default btn-lg"> outcome/overcome 結果/克服 </div>
-<div class="btn btn-default btn-lg"> fiction/function/action 小說/功能/行動 </div>
-<div class="btn btn-default btn-lg"> capacity 容量/能力 </div>
-<div class="btn btn-default btn-lg"> demonstrate 展示 </div>
-<div class="btn btn-default btn-lg"> invest 投資 </div>
-<div class="btn btn-default btn-lg"> goods 商品 </div>
-<div class="btn btn-default btn-lg"> modern 現代的 </div>
-<div class="btn btn-default btn-lg"> element/elegant 元素/優雅的 </div>
-<div class="btn btn-default btn-lg"> words (人們說的)話 </div>
-<div class="btn btn-default btn-lg"> be responsible for/in charge of 負責 </div>
-<div class="btn btn-default btn-lg"> flight ticket 機票 </div>
-<div class="btn btn-default btn-lg"> admire 欣賞/景仰 </div>
-<div class="btn btn-default btn-lg"> private 私人的 </div>
-<div class="btn btn-default btn-lg"> cooperate  S </div>
-<div class="btn btn-default btn-lg"> competition  S </div>
-<div class="btn btn-default btn-lg"> schedule  S </div>
-<div class="btn btn-default btn-lg"> lifespan 壽命 </div>
-<div class="btn btn-default btn-lg"> wealth/wealthy 財富N/富有的adj </div>
-<div class="btn btn-default btn-lg"> court 球場 </div>
-<div class="btn btn-default btn-lg"> zone 區域 </div>
-<div class="btn btn-default btn-lg"> promote 促進 </div>
-<div class="btn btn-default btn-lg"> pedestrian 行人 </div>
-<div class="btn btn-default btn-lg"> encourage 鼓勵 </div>
-<div class="btn btn-default btn-lg"> generation 世代 </div>
-<div class="btn btn-default btn-lg"> the elderly 老年人(禮貌用語) </div>
-<div class="btn btn-default btn-lg"> application 申請/應用程式 </div>
-<div class="btn btn-default btn-lg"> approach 方法N/接近V </div>
-<div class="btn btn-default btn-lg"> motivate/inspire 激勵/鼓舞 </div>
-<div class="btn btn-default btn-lg"> relieve/relief 緩解V/N </div>
-<div class="btn btn-default btn-lg"> vehicle 車輛 </div>
+<div class="btn btn-default btn-lg"> 英檢 聽力/閱讀 各1大題 </div>
+<div class="btn btn-default btn-lg"> 找那句that不可省的句子 </div>
+<div class="btn btn-default btn-lg"> maintain 維持 </div>
+<div class="btn btn-default btn-lg"> circulation 循環 </div>
+<div class="btn btn-default btn-lg"> promote 促進/推廣 </div>
+<div class="btn btn-default btn-lg"> tournament 巡迴賽 </div>
+<div class="btn btn-default btn-lg"> atmosphere/vibe 氛圍 </div>
+<div class="btn btn-default btn-lg"> punish 懲罰 </div>
+<div class="btn btn-default btn-lg"> instead of 而不是 </div>
+<div class="btn btn-default btn-lg"> see sth/sb as 將sth/sb視為 </div>
+<div class="btn btn-default btn-lg"> opportunity 機會 </div>
+<div class="btn btn-default btn-lg"> rough 粗糙的/大約的 </div>
+<div class="btn btn-default btn-lg"> portion 一份 </div>
+<div class="btn btn-default btn-lg"> working class 工人階級 </div>
+<div class="btn btn-default btn-lg"> term 術語 </div>
+<div class="btn btn-default btn-lg"> as a result of 由於 </div>
+<div class="btn btn-default btn-lg"> documentary 紀錄片 </div>
+<div class="btn btn-default btn-lg"> turn out to be 結果是 </div>
+<div class="btn btn-default btn-lg"> request 要求 </div>
+<div class="btn btn-default btn-lg"> intend to 意圖要 </div>
+<div class="btn btn-default btn-lg"> convince/convincing 說服／令人信服的 </div>
+<div class="btn btn-default btn-lg"> account 帳戶</div>
+<div class="btn btn-default btn-lg"> amount 數量(用於不可數) </div>
+<div class="btn btn-default btn-lg"> connection 連結 </div>
+<div class="btn btn-default btn-lg"> profile 個人資料 </div>
+<div class="btn btn-default btn-lg"> make excuse 找藉口 </div>
+<div class="btn btn-default btn-lg"> claim/calm 聲稱/冷靜的 </div>
+<div class="btn btn-default btn-lg"> active online presence 積極的網路活動 </div>
+<div class="btn btn-default btn-lg"> stay alert 保持警覺 </div>
+<div class="btn btn-default btn-lg"> instinct 直覺/本能 </div>
+<div class="btn btn-default btn-lg"> stay adj 保持……狀態 </div>
+<div class="btn btn-default btn-lg"> grocery/quarter/shown (聽力注意) </div>
+<div class="btn btn-default btn-lg"> 3 months straight 連續三個月 </div>
+<div class="btn btn-default btn-lg"> overall 整體的 </div>
+<div class="btn btn-default btn-lg"> depart 出發 </div>
+<div class="btn btn-default btn-lg"> be able to 能夠 </div>
+<div class="btn btn-default btn-lg"> enable 使能夠 </div>
+<div class="btn btn-default btn-lg"> animal shelter 動物收容所 </div>
+<div class="btn btn-default btn-lg"> shelter V 收容 </div>
+<div class="btn btn-default btn-lg"> statue 雕像 </div>
+<div class="btn btn-default btn-lg"> late mayor 已故市長 </div>
+<div class="btn btn-default btn-lg"> previous 先前的 </div>
+<div class="btn btn-default btn-lg"> former president 前任總統 </div>
+<div class="btn btn-default btn-lg"> harvest 收成 </div>
+<div class="btn btn-default btn-lg"> opposite 相反的/對面的 </div>
+<div class="btn btn-default btn-lg"> tailor 量身訂製 </div>
+<div class="btn btn-default btn-lg"> measure 測量 </div>
+<div class="btn btn-default btn-lg"> suit 西裝 </div>
+<div class="btn btn-default btn-lg"> nuclear 核能的 </div>
+<div class="btn btn-default btn-lg"> fortune 財富/運氣 </div>
+<div class="btn btn-default btn-lg"> destroy/destruction 摧毀V/N </div>
+<div class="btn btn-default btn-lg"> mass destruction 大規模毀滅 </div>
+<div class="btn btn-default btn-lg"> medial advice 醫療建議 </div>
+<div class="btn btn-default btn-lg"> bare 赤裸的 </div>
+<div class="btn btn-default btn-lg"> capable 有能力的 </div>
+<div class="btn btn-default btn-lg" data-pos="S"> pursue  </div>
+<div class="btn btn-default btn-lg" data-pos="S"> nomination </div>
   </p>
 </div>
 
@@ -179,58 +197,63 @@ a{
     <div class="btn btn-success">Reset</div><a class="btn btn-info" href="#chi">CN/EN Version</a>
   </h3>
   <p>
-<div class="btn btn-default btn-lg"> 暑假作業(86-99) </div>
-<div class="btn btn-default btn-lg"> 藍鈕是單字本U18</div>
-<div class="btn btn-primary btn-lg"> cinema </div>
-<div class="btn btn-primary btn-lg"> essential </div>
-<div class="btn btn-primary btn-lg"> entertainment </div>
-<div class="btn btn-primary btn-lg"> direct </div>
-<div class="btn btn-primary btn-lg"> silence </div>
-<div class="btn btn-primary btn-lg"> fair </div>
-<div class="btn btn-primary btn-lg"> stage </div>
-<div class="btn btn-primary btn-lg"> inventor </div>
-<div class="btn btn-primary btn-lg"> proper </div>
-<div class="btn btn-primary btn-lg"> decade </div>
-<div class="btn btn-primary btn-lg"> nearly </div>
-<div class="btn btn-primary btn-lg"> dialogue </div>
-<div class="btn btn-primary btn-lg"> inspire </div>
-<div class="btn btn-primary btn-lg"> creativity </div>
-<div class="btn btn-primary btn-lg"> career </div>
-<div class="btn btn-primary btn-lg"> fame </div>
-<div class="btn btn-primary btn-lg"> hardship </div>
-<div class="btn btn-primary btn-lg"> dramatically </div>
-<div class="btn btn-primary btn-lg"> switch </div>
-<div class="btn btn-primary btn-lg"> emergence </div>
-<div class="btn btn-default btn-lg"> outcome/overcome </div>
-<div class="btn btn-default btn-lg"> fiction/function/action </div>
-<div class="btn btn-default btn-lg"> capacity </div>
-<div class="btn btn-default btn-lg"> demonstrate </div>
-<div class="btn btn-default btn-lg"> invest </div>
-<div class="btn btn-default btn-lg"> goods </div>
-<div class="btn btn-default btn-lg"> modern </div>
-<div class="btn btn-default btn-lg"> element/elegant </div>
-<div class="btn btn-default btn-lg"> words </div>
-<div class="btn btn-default btn-lg"> be responsible for/in charge of </div>
-<div class="btn btn-default btn-lg"> flight ticket </div>
-<div class="btn btn-default btn-lg"> admire </div>
-<div class="btn btn-default btn-lg"> private </div>
-<div class="btn btn-default btn-lg"> cooperate S </div>
-<div class="btn btn-default btn-lg"> competition S </div>
-<div class="btn btn-default btn-lg"> schedule S </div>
-<div class="btn btn-default btn-lg"> lifespan </div>
-<div class="btn btn-default btn-lg"> wealth/wealthy </div>
-<div class="btn btn-default btn-lg"> court </div>
-<div class="btn btn-default btn-lg"> zone </div>
+<div class="btn btn-default btn-lg"> 英檢 聽力/閱讀 各1大題 </div>
+<div class="btn btn-default btn-lg"> 找那句that不可省的句子 </div>
+<div class="btn btn-default btn-lg"> maintain </div>
+<div class="btn btn-default btn-lg"> circulation </div>
 <div class="btn btn-default btn-lg"> promote </div>
-<div class="btn btn-default btn-lg"> pedestrian </div>
-<div class="btn btn-default btn-lg"> encourage </div>
-<div class="btn btn-default btn-lg"> generation </div>
-<div class="btn btn-default btn-lg"> the elderly </div>
-<div class="btn btn-default btn-lg"> application </div>
-<div class="btn btn-default btn-lg"> approach </div>
-<div class="btn btn-default btn-lg"> motivate/inspire </div>
-<div class="btn btn-default btn-lg"> relieve/relief </div>
-<div class="btn btn-default btn-lg"> vehicle </div>
+<div class="btn btn-default btn-lg"> tournament </div>
+<div class="btn btn-default btn-lg"> atmosphere/vibe </div>
+<div class="btn btn-default btn-lg"> punish </div>
+<div class="btn btn-default btn-lg"> instead of </div>
+<div class="btn btn-default btn-lg"> see sth/sb as </div>
+<div class="btn btn-default btn-lg"> opportunity </div>
+<div class="btn btn-default btn-lg"> =rough </div>
+<div class="btn btn-default btn-lg"> portion </div>
+<div class="btn btn-default btn-lg"> working class </div>
+<div class="btn btn-default btn-lg"> term </div>
+<div class="btn btn-default btn-lg"> as a result of </div>
+<div class="btn btn-default btn-lg"> documentary </div>
+<div class="btn btn-default btn-lg"> turn out to be </div>
+<div class="btn btn-default btn-lg"> request </div>
+<div class="btn btn-default btn-lg"> intend to </div>
+<div class="btn btn-default btn-lg"> convince/convincing </div>
+<div class="btn btn-default btn-lg"> account </div>
+<div class="btn btn-default btn-lg"> amount </div>
+<div class="btn btn-default btn-lg"> connection </div>
+<div class="btn btn-default btn-lg"> profile </div>
+<div class="btn btn-default btn-lg"> make excuse </div>
+<div class="btn btn-default btn-lg"> claim/calm  </div>
+<div class="btn btn-default btn-lg"> active online presence </div>
+<div class="btn btn-default btn-lg"> stay alert </div>
+<div class="btn btn-default btn-lg"> instinct </div>
+<div class="btn btn-default btn-lg"> stay adj </div>
+<div class="btn btn-default btn-lg"> grocery/quarter/shown </div>
+<div class="btn btn-default btn-lg"> 3 months straight </div>
+<div class="btn btn-default btn-lg"> overall </div>
+<div class="btn btn-default btn-lg"> depart </div>
+<div class="btn btn-default btn-lg"> be able to </div>
+<div class="btn btn-default btn-lg"> enable </div>
+<div class="btn btn-default btn-lg"> animal shelter </div>
+<div class="btn btn-default btn-lg"> shelter V </div>
+<div class="btn btn-default btn-lg"> statue </div>
+<div class="btn btn-default btn-lg"> late mayor </div>
+<div class="btn btn-default btn-lg"> previous </div>
+<div class="btn btn-default btn-lg"> former president </div>
+<div class="btn btn-default btn-lg"> harvest </div>
+<div class="btn btn-default btn-lg"> opposite </div>
+<div class="btn btn-default btn-lg"> tailor </div>
+<div class="btn btn-default btn-lg"> measure </div>
+<div class="btn btn-default btn-lg"> suit </div>
+<div class="btn btn-default btn-lg"> nuclear </div>
+<div class="btn btn-default btn-lg"> fortune </div>
+<div class="btn btn-default btn-lg"> destroy/destruction </div>
+<div class="btn btn-default btn-lg"> mass destruction </div>
+<div class="btn btn-default btn-lg"> medial advice </div>
+<div class="btn btn-default btn-lg"> bare </div>
+<div class="btn btn-default btn-lg"> capable </div>
+<div class="btn btn-default btn-lg" data-pos="S"> pursue </div>
+<div class="btn btn-default btn-lg" data-pos="S"> nomination </div>
   </p>
 </div>
 </div>
